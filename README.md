@@ -6,10 +6,14 @@ A sleek loading indicator for React Native apps for IOS (as of now).
 
 
 ### Usage
+Install the package
+```
+npm install react-native-sleek-loading-indicator --save
+```
 
 ```javascript
 
-const LoadingIndicator = require('react-native-sleek-loading-indicator');
+const SleekLoadingIndicator = require('react-native-sleek-loading-indicator');
 
 const MyView = React.createClass({
    render() {
