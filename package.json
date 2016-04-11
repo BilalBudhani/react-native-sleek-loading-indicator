@@ -1,0 +1,33 @@
+{
+  "name": "react-native-awesome-loading-indicator",
+  "version": "0.0.1",
+  "description": "Sleek Loading Indicator for React Native",
+  "main": "index.ios.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native",
+    "ios",
+    "react-components",
+    "loading",
+    "loader"
+  ],
+  "author": {
+    "name" : "Bilal Budhani",
+    "email" : "bilalbudhani@gmail.com",
+    "url" : "https://github.com/BilalBudhani"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BilalBudhani/react-native-sleek-loading-indicator"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "maintainers": [
+      {
+          "email" : "bilalbudhani@gmail.com",
+          "name" : "Bilal Budhani"
+      }
+  ]
+}
