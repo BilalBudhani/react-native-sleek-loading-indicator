@@ -2,50 +2,50 @@
 
 var React = require('react-native');
 var {
-   View, 
+   View,
    Text,
    ActivityIndicatorIOS,
    StyleSheet
 } = React;
 
 
-const AwesomeLoadingIndicator = React.createClass({
-  
+const SleekLoadingIndicator = React.createClass({
+
   getDefaultProps() {
     return {
       text: 'Loading...',
       loading: true
     }
   },
-  
+
   propTypes: {
     // text: React.propTypes.string,
     loading: React.PropTypes.bool,
   },
-  
+
   render() {
     if (this.props.loading) {
       return (
-        <View 
+        <View
           style={styles.container}>
             <View style={styles.loadingContainer}>
-            
+
             <Text style={styles.loadingText}>{this.props.text}</Text>
-            
+
             <View style={styles.spinnerContainer}>
               <ActivityIndicatorIOS
                 animating={true}
-                size="large"
+                size='large'
               />
-            </View> 
-            
-            </View>      
+            </View>
+
+            </View>
         </View>
-      ); 
+      );
     } else {
       return null;
     }
-  } 
+  }
 });
 
 const styles = StyleSheet.create({
@@ -59,29 +59,30 @@ const styles = StyleSheet.create({
       alignItems: 'center',
       justifyContent: 'center'
    },
-   
+
    loadingContainer: {
-     padding: 8,
+     padding: 12,
      backgroundColor: '#000',
      borderRadius: 8,
-     opacity: .9,
+     opacity: .8,
      justifyContent: 'center',
      alignItems: 'center'
    },
-   
+
    loadingText: {
      fontWeight: 'bold',
      color: '#fff',
-     textAlign: 'center'
+     textAlign: 'center',
+     fontSize: 22,
    },
-   
+
    spinnerContainer: {
       flex: 1,
       alignItems: 'center',
       justifyContent: 'center',
       padding: 4,
       marginTop: 4,
-   }
+   },
 });
 
-module.exports = AwesomeLoadingIndicator;
+module.exports = SleekLoadingIndicator;
