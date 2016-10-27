@@ -33,7 +33,6 @@ module.exports = StyleSheet.create({
    },
 
    spinnerContainer: {
-      flex: 1,
       alignItems: 'center',
       justifyContent: 'center',
       padding: 4,
